@@ -17,6 +17,33 @@ a {
   text-decoration: none;
 }
 
+.global-header {
+  display: flex;
+  width: 1600px;
+  height: 80px;
+  border: 1px solid #ececec;
+  align-items: center;
+}
+
+.global-header .header-logo {
+  display: flex;
+  align-items: center;
+}
+.global-header .main-navigation ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 259px;
+  align-items: center;
+  margin-left: 93px;
+}
+
+.header-logo {
+  padding-left: 215px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 .web-logo {
   color: var(--background-hover-button-color);
   font-family: Raleway;
@@ -40,6 +67,7 @@ a {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+  padding: 16px 0;
 }
 
 .nav-link {
@@ -47,6 +75,7 @@ a {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+  padding: 16px 0;
 }
 
 #navigation li a.current {
@@ -57,12 +86,32 @@ a {
   color: #212121;
 }
 
-.contact {
+.global-header ul {
+  display: flex;
+}
+
+.mail-address {
   color: var(--light-gray-text-color);
   font-size: 14px;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+  align-items: center;
+  width: 135px;
+  margin-left: 376px;
+  padding: 16px 0;
+}
+
+.phone-number {
+  color: var(--light-gray-text-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  align-items: center;
+  width: 112px;
+  margin-left: 40px;
+  padding: 16px 0;
 }
 
 .nav-link:hover,
@@ -73,6 +122,9 @@ a {
 }
 
 .business-solutions-section {
+  width: 1600px;
+  height: 600px;
+  flex-shrink: 0;
   background: #2f303a;
 }
 
@@ -84,6 +136,8 @@ a {
   line-height: 1.36364;
   letter-spacing: 2.64px;
   text-transform: uppercase;
+  margin: auto;
+  padding: 200px 452px 30px;
 }
 
 .order-service {
@@ -96,6 +150,7 @@ a {
   background: var(--background-hover-button-color);
   cursor: pointer;
   font-family: inherit;
+  margin-left: 700px;
 }
 
 .order-service:hover,
@@ -105,6 +160,21 @@ a {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+.about-us-section {
+  width: 1600px;
+}
+
+.about-us-container {
+  padding: 94px 215px;
+}
+
+.about-us-container ul {
+  display: flex;
+  width: 1200px;
+  height: 101px;
+  flex-shrink: 0;
+}
+
 .about-us {
   color: var(--dark-gray-text-color);
   font-size: 14px;
@@ -112,13 +182,42 @@ a {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  padding: 0 15px;
+  gap: 30px;
+  background: #fff;
 }
 
 .about-us-text {
+  display: flex;
   color: var(--light-gray-text-color);
   font-size: 14px;
   line-height: 1.71429;
   letter-spacing: 0.42px;
+  width: 270px;
+  height: 75px;
+  flex-shrink: 0;
+  padding: 0 15px;
+}
+
+.what-we-do-container {
+  flex-wrap: wrap;
+  width: 1200px;
+  height: 386px;
+  padding: 0 200px 94px;
+  background: #fff;
+}
+
+.what-we-do-container h2 {
+  padding-left: 370px;
+}
+
+.what-we-do-container ul {
+  display: flex;
+  width: 370px;
+  height: 294px;
+  flex-shrink: 0;
+  padding: 0 15px;
+  gap: 30px;
 }
 
 .chapter {
@@ -131,7 +230,25 @@ a {
 }
 
 .our-team-section {
+  width: 1600px;
+  height: 648px;
+  flex-shrink: 0;
   background: #f5f4fa;
+}
+
+.our-team-section ul {
+  display: flex;
+  gap: 30px;
+  padding-top: 50px;
+  padding-left: 215px;
+}
+
+.our-team-section li {
+  border-radius: 0px 0px 4px 4px;
+  background: #fff;
+  /* material shadow v1 */
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .my-name {
@@ -151,9 +268,19 @@ a {
   letter-spacing: 0.48px;
 }
 
+.our-team-section h2 {
+  padding-top: 94px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  
+}
+
 .filter {
   color: var(--dark-gray-text-color);
-  text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.625;
@@ -166,6 +293,30 @@ a {
 .filter:focus {
   background-color: var(--background-hover-button-color);
   color: var(--button-hover-text-color);
+}
+
+.our-work-section .work-cards ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-basis: calc((100%-30px) / 3);
+  width: 1200px;
+  height: 1360px;
+  padding-top: 50px;
+  padding-left: 215px;
+}
+
+.our-work-section .work-cards li {
+  width: 370px;
+  flex-shrink: 0;
+  border: 1px solid #eee;
+  background: #fff;
+}
+
+.our-work-section .buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
 }
 
 .project {
@@ -208,8 +359,23 @@ a {
   font-style: normal;
   line-height: 1.14286;
   letter-spacing: 0.42px;
+  margin-top: -10px;
 }
 
 .bottom {
+  width: 1600px;
+  height: 251px;
+  flex-shrink: 0;
   background: #2f303a;
+}
+
+.bottom-logo {
+  display: flex;
+  padding-left: 215px;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.bottom p {
+  padding-left: 215px;
 }
