@@ -276,7 +276,7 @@ a {
   display: flex;
   justify-content: center;
   gap: 30px;
-  
+  width: 1200px;
 }
 
 .filter {
@@ -295,15 +295,31 @@ a {
   color: var(--button-hover-text-color);
 }
 
+.work-cards {
+  width: 12000px;
+  height: 1360px;
+}
+
 .our-work-section .work-cards ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
   flex-basis: calc((100%-30px) / 3);
   width: 1200px;
   height: 1360px;
   padding-top: 50px;
+}
+
+.our-work-section {
+  width: 1200px;
+  height: 1360px;
   padding-left: 215px;
+  border: 1px;
+}
+
+.image {
+  width: 370px;
+  height: 294px;
+  flex-shrink: 0;
 }
 
 .our-work-section .work-cards li {
@@ -314,8 +330,6 @@ a {
 }
 
 .our-work-section .buttons {
-  display: flex;
-  justify-content: center;
   padding-top: 100px;
 }
 
@@ -367,6 +381,7 @@ a {
   height: 251px;
   flex-shrink: 0;
   background: #2f303a;
+  margin-top: 200px;
 }
 
 .bottom-logo {
