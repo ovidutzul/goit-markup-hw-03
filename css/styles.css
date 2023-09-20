@@ -184,7 +184,7 @@ a {
   text-transform: uppercase;
   padding: 0 15px;
   gap: 30px;
-  background: #fff;
+  background: var(--button-hover-text-color);
 }
 
 .about-us-text {
@@ -204,7 +204,7 @@ a {
   width: 1200px;
   height: 386px;
   padding: 0 200px 94px;
-  background: #fff;
+  background: var(--button-hover-text-color);
 }
 
 .what-we-do-container h2 {
@@ -245,7 +245,7 @@ a {
 
 .our-team-section li {
   border-radius: 0px 0px 4px 4px;
-  background: #fff;
+  background: var(--button-hover-text-color);
   /* material shadow v1 */
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -296,22 +296,22 @@ a {
 }
 
 .work-cards {
-  width: 12000px;
-  height: 1360px;
+  display: flex;
+  width: 1200px;
 }
 
 .our-work-section .work-cards ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
   flex-basis: calc((100%-30px) / 3);
   width: 1200px;
-  height: 1360px;
-  padding-top: 50px;
 }
 
 .our-work-section {
   width: 1200px;
-  height: 1360px;
+  height: 1548px;
   padding-left: 215px;
   border: 1px;
 }
@@ -324,13 +324,16 @@ a {
 
 .our-work-section .work-cards li {
   width: 370px;
+  height: 404px;
   flex-shrink: 0;
   border: 1px solid #eee;
-  background: #fff;
+  background: var(--button-hover-text-color);
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
 .our-work-section .buttons {
-  padding-top: 100px;
+  padding-top: 94px;
 }
 
 .project {
@@ -339,6 +342,10 @@ a {
   font-weight: 700;
   line-height: 2;
   letter-spacing: 1.08px;
+  margin-top: 1px;
+  height: 36px;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
 .web-site,
@@ -349,6 +356,10 @@ a {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.48px;
+  margin-top: 4px;
+  width: 322px;
+  height: 30px;
+  padding-left: 24px;
 }
 
 .bottom-studio-logo {
@@ -377,20 +388,20 @@ a {
 }
 
 .bottom {
+  display: inline-block;
   width: 1600px;
   height: 251px;
   flex-shrink: 0;
   background: #2f303a;
-  margin-top: 200px;
 }
 
 .bottom-logo {
   display: flex;
-  padding-left: 215px;
+  margin-left: 215px;
   align-items: center;
-  padding-top: 80px;
+  margin-top: 60px;
 }
 
 .bottom p {
-  padding-left: 215px;
+  margin-left: 215px;
 }
