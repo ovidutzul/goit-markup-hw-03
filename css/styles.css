@@ -205,10 +205,12 @@ a {
   height: 386px;
   padding: 0 200px 94px;
   background: var(--button-hover-text-color);
+  margin-bottom: 94px;
 }
 
 .what-we-do-container h2 {
   padding-left: 370px;
+  padding-bottom: 15px;
 }
 
 .what-we-do-container ul {
@@ -219,7 +221,10 @@ a {
   padding: 0 15px;
   gap: 30px;
 }
-
+.our-team-section h2 {
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
 .chapter {
   text-align: center;
   color: var(--dark-gray-text-color);
@@ -268,11 +273,6 @@ a {
   letter-spacing: 0.48px;
   margin-top: -10px;
   margin-bottom: 30px;
-}
-
-.our-team-section h2 {
-  padding-top: 94px;
-  margin-bottom: 50px;
 }
 
 .buttons {
