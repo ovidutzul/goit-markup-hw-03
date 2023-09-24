@@ -234,12 +234,12 @@ a {
   height: 648px;
   flex-shrink: 0;
   background: #f5f4fa;
+  padding-bottom: 94px;
 }
 
 .our-team-section ul {
   display: flex;
   gap: 30px;
-  padding-top: 50px;
   padding-left: 215px;
 }
 
@@ -266,10 +266,13 @@ a {
   font-size: 16px;
   line-height: normal;
   letter-spacing: 0.48px;
+  margin-top: -10px;
+  margin-bottom: 30px;
 }
 
 .our-team-section h2 {
   padding-top: 94px;
+  margin-bottom: 50px;
 }
 
 .buttons {
